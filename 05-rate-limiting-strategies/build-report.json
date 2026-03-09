@@ -1,0 +1,40 @@
+{
+  "poc_slug": "05-rate-limiting-strategies",
+  "poc_title": "Rate Limiting Strategies",
+  "poc_goal": "Implement rate limiting to mitigate brute force and denial of service attacks.",
+  "status": "succeeded",
+  "packages_used": [
+    "fastapi",
+    "pydantic",
+    "slowapi"
+  ],
+  "artifacts": [
+    {
+      "type": "claude_md",
+      "path": "/Users/cleanreact/Desktop/poc-factory/output/prompt-injection-guardrails/05-rate-limiting-strategies/CLAUDE.md",
+      "created_at": "2026-03-09T14:31:27.589113+00:00"
+    },
+    {
+      "type": "prose_markdown",
+      "path": "/Users/cleanreact/Desktop/poc-factory/output/prompt-injection-guardrails/05-rate-limiting-strategies/_docs/05-rate-limiting-strategies.md",
+      "created_at": "2026-03-09T14:38:35.735798+00:00"
+    },
+    {
+      "type": "code_walkthrough_markdown",
+      "path": "/Users/cleanreact/Desktop/poc-factory/output/prompt-injection-guardrails/05-rate-limiting-strategies/_docs/code-implementation-05-rate-limiting-strategies.md",
+      "created_at": "2026-03-09T14:38:58.776203+00:00"
+    }
+  ],
+  "validation": {
+    "static_checks_passed": true,
+    "tests_passed": true
+  },
+  "repair_attempts": 1,
+  "error_message": "Claude Code timed out",
+  "notes": [
+    "Claude Code build failed: exit_code=-1",
+    "Repair attempt 1 succeeded"
+  ],
+  "started_at": "2026-03-09T14:31:06.106556+00:00",
+  "completed_at": "2026-03-09T14:38:58.781144+00:00"
+}

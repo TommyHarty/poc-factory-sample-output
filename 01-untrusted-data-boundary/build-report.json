@@ -1,0 +1,38 @@
+{
+  "poc_slug": "01-untrusted-data-boundary",
+  "poc_title": "Untrusted Data Boundary",
+  "poc_goal": "Implement strict input validation and sanitization at the boundary between user-supplied data and agent instructions.",
+  "status": "succeeded",
+  "packages_used": [
+    "fastapi",
+    "pydantic"
+  ],
+  "artifacts": [
+    {
+      "type": "claude_md",
+      "path": "/Users/cleanreact/Desktop/poc-factory/output/prompt-injection-guardrails/01-untrusted-data-boundary/CLAUDE.md",
+      "created_at": "2026-03-09T14:13:06.238303+00:00"
+    },
+    {
+      "type": "prose_markdown",
+      "path": "/Users/cleanreact/Desktop/poc-factory/output/prompt-injection-guardrails/01-untrusted-data-boundary/_docs/01-untrusted-data-boundary.md",
+      "created_at": "2026-03-09T14:17:52.219553+00:00"
+    },
+    {
+      "type": "code_walkthrough_markdown",
+      "path": "/Users/cleanreact/Desktop/poc-factory/output/prompt-injection-guardrails/01-untrusted-data-boundary/_docs/code-implementation-01-untrusted-data-boundary.md",
+      "created_at": "2026-03-09T14:18:31.655160+00:00"
+    }
+  ],
+  "validation": {
+    "static_checks_passed": true,
+    "tests_passed": true
+  },
+  "repair_attempts": 0,
+  "error_message": null,
+  "notes": [
+    "Claude Code build succeeded"
+  ],
+  "started_at": "2026-03-09T14:12:41.372998+00:00",
+  "completed_at": "2026-03-09T14:18:31.659415+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "run_id": "93f92cbc-f258-4a75-b4bf-66b604973068",
+  "phrase": "prompt injection guardrails",
+  "normalized_phrase": "prompt injection guardrails",
+  "slug": "prompt-injection-guardrails",
+  "technologies": [
+    "fastapi",
+    "pydantic"
+  ],
+  "optional_packages": [],
+  "target_poc_count": 5,
+  "selected_pocs": [
+    {
+      "index": 1,
+      "title": "Untrusted Data Boundary",
+      "slug": "01-untrusted-data-boundary",
+      "goal": "Implement strict input validation and sanitization at the boundary between user-supplied data and agent instructions.",
+      "why_it_matters": "Without clear trust boundaries, user input can manipulate agent behavior in unintended ways.",
+      "scope_boundaries": [
+        "multi-layer defense in depth",
+        "output validation",
+        "tool execution controls"
+      ],
+      "required_packages": [
+        "fastapi",
+        "pydantic"
+      ],
+      "rank_justification": "Foundational - must be understood before any other injection defense.",
+      "excludes": []
+    },
+    {
+      "index": 2,
+      "title": "Input Schema Enforcement",
+      "slug": "02-input-schema-enforcement",
+      "goal": "Use Pydantic models to enforce strict input schemas for all API endpoints.",
+      "why_it_matters": "Ensures that only well-formed data reaches the application logic, reducing injection risks.",
+      "scope_boundaries": [
+        "output validation",
+        "runtime type checking"
+      ],
+      "required_packages": [
+        "fastapi",
+        "pydantic"
+      ],
+      "rank_justification": "Essential for ensuring data integrity and preventing malformed inputs.",
+      "excludes": []
+    },
+    {
+      "index": 3,
+      "title": "Parameterized Queries",
+      "slug": "03-parameterized-queries",
+      "goal": "Demonstrate the use of parameterized queries to prevent SQL injection.",
+      "why_it_matters": "SQL injection is a common attack vector that can be mitigated with parameterized queries.",
+      "scope_boundaries": [
+        "ORM usage",
+        "NoSQL databases"
+      ],
+      "required_packages": [
+        "fastapi",
+        "pydantic",
+        "sqlite3"
+      ],
+      "rank_justification": "Critical for understanding how to safely interact with databases.",
+      "excludes": []
+    },
+    {
+      "index": 4,
+      "title": "Output Encoding Practices",
+      "slug": "04-output-encoding-practices",
+      "goal": "Implement output encoding to prevent cross-site scripting (XSS) attacks.",
+      "why_it_matters": "Output encoding is essential to ensure that user input is not executed as code in the browser.",
+      "scope_boundaries": [
+        "input validation",
+        "content security policy"
+      ],
+      "required_packages": [
+        "fastapi",
+        "pydantic"
+      ],
+      "rank_justification": "Important for preventing client-side script injection.",
+      "excludes": []
+    },
+    {
+      "index": 5,
+      "title": "Rate Limiting Strategies",
+      "slug": "05-rate-limiting-strategies",
+      "goal": "Implement rate limiting to mitigate brute force and denial of service attacks.",
+      "why_it_matters": "Rate limiting helps protect against abuse and ensures fair resource usage.",
+      "scope_boundaries": [
+        "authentication",
+        "IP blacklisting"
+      ],
+      "required_packages": [
+        "fastapi",
+        "pydantic",
+        "slowapi"
+      ],
+      "rank_justification": "Provides a basic defense against automated attacks.",
+      "excludes": []
+    }
+  ],
+  "created_at": "2026-03-09T14:12:41.357195+00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "run_id": "93f92cbc-f258-4a75-b4bf-66b604973068",
+  "phrase": "prompt injection guardrails",
+  "normalized_phrase": "prompt injection guardrails",
+  "slug": "prompt-injection-guardrails",
+  "status": "completed",
+  "total_pocs": 5,
+  "completed_pocs": 5,
+  "failed_pocs": 0,
+  "poc_summaries": [
+    {
+      "poc_slug": "01-untrusted-data-boundary",
+      "poc_title": "Untrusted Data Boundary",
+      "status": "succeeded",
+      "validation_status": "passed",
+      "repair_attempts": [],
+      "markdown_status": "succeeded",
+      "error_message": null
+    },
+    {
+      "poc_slug": "02-input-schema-enforcement",
+      "poc_title": "Input Schema Enforcement",
+      "status": "succeeded",
+      "validation_status": "passed",
+      "repair_attempts": [],
+      "markdown_status": "succeeded",
+      "error_message": null
+    },
+    {
+      "poc_slug": "03-parameterized-queries",
+      "poc_title": "Parameterized Queries",
+      "status": "succeeded",
+      "validation_status": "passed",
+      "repair_attempts": [],
+      "markdown_status": "succeeded",
+      "error_message": null
+    },
+    {
+      "poc_slug": "04-output-encoding-practices",
+      "poc_title": "Output Encoding Practices",
+      "status": "succeeded",
+      "validation_status": "passed",
+      "repair_attempts": [],
+      "markdown_status": "succeeded",
+      "error_message": null
+    },
+    {
+      "poc_slug": "05-rate-limiting-strategies",
+      "poc_title": "Rate Limiting Strategies",
+      "status": "succeeded",
+      "validation_status": "passed",
+      "repair_attempts": [],
+      "markdown_status": "succeeded",
+      "error_message": "Claude Code timed out"
+    }
+  ],
+  "artifact_root": "/Users/cleanreact/Desktop/poc-factory/output/prompt-injection-guardrails",
+  "started_at": "2026-03-09T14:12:00.923395+00:00",
+  "completed_at": "2026-03-09T14:38:58.788474+00:00",
+  "duration_seconds": 1617.865079,
+  "errors": [],
+  "warnings": []
+}
